@@ -2,6 +2,9 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/me.jpg'
 import {FaAward} from 'react-icons/fa'
+import {FiUsers} from 'react-icons/fi'
+import {AiOutlineFolder} from 'react-icons/ai'
+import '../nav/Nav.jsx'
 
 const About = () => {
   return (
@@ -22,16 +25,24 @@ const About = () => {
                 <small>3+ Years Working</small>
               </article>
               <article className='about__card'>
-                <FaAward className='about__icon' />
-                <h5>Experience</h5>
-                <small>3+ Years Working</small>
+                <FiUsers className='about__icon' />
+                <h5>Clients</h5>
+                <small>200+ Worldwide</small>
               </article>
               <article className='about__card'>
-                <FaAward className='about__icon' />
-                <h5>Experience</h5>
-                <small>3+ Years Working</small>
-              </article> +
+                <AiOutlineFolder className='about__icon' />
+                <h5>Projects</h5>
+                <small>80+ Completed</small>
+              </article> 
             </div>
+            <p>
+            Lorem Ipsum is simply dummy text of the printing
+             and typesetting industry. Lorem Ipsum has been 
+             the industry's standard dummy text ever since 
+             the 1500s, when an unknown printer took a galley
+             of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="#contact"  className='btn btn-primary' >Let's Talk</a>
           </div>
       </div>
     </section>

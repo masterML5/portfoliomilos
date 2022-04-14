@@ -9,5 +9,5 @@ import CV from '../../assets/cv.pdf'
     </div>
   )
 }
-//hello
+
  export default CTA
