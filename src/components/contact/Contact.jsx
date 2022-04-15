@@ -1,8 +1,8 @@
 import React from 'react'
 import './contact.css'
-import {AiOutlineMail} from 'react-icons/ai'
+import {MdMail} from 'react-icons/md'
 import {FaFacebookMessenger} from 'react-icons/fa'
-import {FaWhatsapp} from 'react-icons/fa'
+import {RiWhatsappFill} from 'react-icons/ri'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
@@ -22,10 +22,9 @@ const Contact = () => {
       
     e.target.reset()
     
-    document.querySelector('form').appendChild(newElement);
-    
-    
+    document.querySelector('form').appendChild(newElement);   
   };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -34,7 +33,7 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <AiOutlineMail  className='contact__option-icon'/>
+            <MdMail  className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>milosjelic98@gmail.com</h5>
             <a href="mailto:milosjelic98@gmail.com">Send a message</a>     
@@ -46,7 +45,7 @@ const Contact = () => {
             <a href="https://m.me/masterML5" target="_blank" rel='noreferrer'>Send a message</a>     
           </article>
           <article className="contact__option">
-            <FaWhatsapp className='contact__option-icon' />
+            <RiWhatsappFill className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>Milos Jelic</h5>
             <a href="https://api.whatsapp.com/send?phone=+381614819611" target="_blank" rel='noreferrer'>Send a message</a>     

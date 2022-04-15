@@ -1,3 +1,4 @@
+
 .container.contact__container{
     width: 58%;
     display: grid;
@@ -31,7 +32,9 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
+
 }
+
 .contact__option h5{
     color: var(--color-light);
 }
