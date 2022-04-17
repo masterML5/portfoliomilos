@@ -10,8 +10,14 @@ import emailjs from 'emailjs-com'
 
 
 let newElement = document.createElement('label');
-newElement.id = 'poruka'
-newElement.innerText='Uspesno ste poslali poruku';
+// newElement.innerText='Uspesno ste poslali poruku';
+newElement.appendChild(
+  document.createTextNode('Uspesno ste poslali poruku')
+);
+
+
+
+
 
 const Contact = () => {
   const form = useRef();
@@ -22,9 +28,17 @@ const Contact = () => {
       
     e.target.reset()
     
-    document.querySelector('form').appendChild(newElement);   
-  };
+    document.getElementById("forma").appendChild(newElement);
 
+    setTimeout(function(){ 
+      
+      document.getElementById("forma").removeChild(newElement);
+  }, 2000);
+   
+    
+    
+  };
+  
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -52,7 +66,7 @@ const Contact = () => {
           </article>
           </div>
           {/*end*/}
-        <form ref={form} onSubmit={sendEmail}>
+        <form id="forma" ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='name' placeholder='Your Email' required />
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
