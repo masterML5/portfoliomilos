@@ -34,6 +34,7 @@ footer a{
     border-radius: 0.7rem;
     display: flex;
     border: 1px solid transparent;
+    align-items: center;
 }
 .footer__socials a:hover{
     background: transparent;

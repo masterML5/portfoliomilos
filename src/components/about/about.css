@@ -44,6 +44,7 @@
     background:transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    color: var(--color-primary);
 }
 .about__icon {
     color: var(--color-primary);

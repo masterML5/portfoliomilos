@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 import {FaFacebook} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
-import {AiFillTwitterCircle} from 'react-icons/ai'
+import {SiTwitter} from 'react-icons/si'
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
           <FaInstagram />
         </a>
         <a href="https://twitter.com">
-          <AiFillTwitterCircle />
+          <SiTwitter />
         </a>
         </div>
 
